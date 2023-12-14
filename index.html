@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background clip</title>
+    <style>
+        .t{
+            font-size: 200px;
+            font-weight: 900;
+            font-family: arial;
+            background-image: url(ttt.jpg);
+            background-size: cover;
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+        .orign{
+            background-size: cover;
+            background-position: center;
+            border: dashed 10px orangered;
+            background-repeat: no-repeat;
+            padding: 25px;
+        }
+        .orign1{
+            background-origin: padding-box;
+            background-image: url(yeni\ il.jpg);
+        }
+        .orign2{   
+            background-origin: border-box;
+            background-image: url(rrr.jpg);
+        }
+        .orign3{       
+            background-origin: content-box;
+            background-image: url(ttt.jpg);
+        }
+        h1{
+            color: white;
+        }
+        p{
+            color: white;
+        }
+        .el{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="t">ilkin</div>
+    <h1 class="el">padding box</h1>
+    <div class="orign orign1">
+        <h1>Yeni il 2024</h1>
+        <p>THE CAFI</p>
+    </div>
+    <h1 class="el">border box</h1>
+    <div class="orign orign2">
+        <h1>Yeni il 2024</h1>
+        <p>THE CAFI</p>
+    </div>
+    <h1 class="el">content box</h1>
+    <div class="orign orign3">
+        <h1>Yeni il 2024</h1>
+        <p>THE CAFI</p>
+    </div>
+    
+    
+</body>
+</html>
